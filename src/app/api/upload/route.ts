@@ -25,8 +25,10 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'Invalid cronograma structure' }, { status: 400 });
         }
 
-        const stmt = db.prepare('INSERT INTO cronogramas (data) VALUES (?)');
-        stmt.run(text);
+        await db.execute({
+            sql: 'INSERT INTO cronogramas (data) VALUES (?)',
+            args: [text]
+        });
 
         return NextResponse.json({ message: 'Upload successful' });
     } catch (error) {

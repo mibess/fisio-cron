@@ -3,8 +3,8 @@ import db from '@/lib/db';
 
 export async function GET() {
     try {
-        const stmt = db.prepare('SELECT data FROM cronogramas ORDER BY id DESC LIMIT 1');
-        const row = stmt.get() as { data: string } | undefined;
+        const result = await db.execute('SELECT data FROM cronogramas ORDER BY id DESC LIMIT 1');
+        const row = result.rows[0] as unknown as { data: string } | undefined;
 
         if (!row) {
             return NextResponse.json({ error: 'No cronograma found' }, { status: 404 });
