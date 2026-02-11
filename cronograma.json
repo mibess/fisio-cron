@@ -1,0 +1,29 @@
+{
+  "faseAtual": "Fase 1 — Reconstrução Total",
+  "inicio": "2026-02-16",
+  "duracaoSemanas": 8,
+  "objetivo": "Reconstruir base física e mobilidade",
+  "regras": ["Beber 3L de água", "Dormir 8h"],
+  "fases": [
+    {
+      "titulo": "Fase 1 — Reconstrução Total",
+      "dias": [
+        {
+          "nome": "Segunda",
+          "itens": [
+            { "hora": "07:00", "descricao": "Acordar + Água com limão" },
+            { "hora": "08:00", "descricao": "Treino de Mobilidade" },
+            { "descricao": "Leitura (30 min)" }
+          ]
+        },
+        {
+          "nome": "Terça",
+          "itens": [
+            { "hora": "07:00", "descricao": "Acordar" },
+            { "hora": "18:00", "descricao": "Corrida leve 3km" }
+          ]
+        }
+      ]
+    }
+  ]
+}
