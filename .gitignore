@@ -40,4 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-cronograma.db
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
