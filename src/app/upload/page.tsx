@@ -57,7 +57,7 @@ export default function UploadPage() {
             <div className="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
                 <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">Upload do Cronograma</h1>
 
-                <form action="#" onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                             Arquivo JSON
